@@ -1,0 +1,187 @@
+  .follow-cursor {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    transform: translateY(-50%) translateX(-50%); /* центрируем кружок */
+    position: absolute; /* задаём абсолютное позиционирование, чтобы элемент не влиял на остальные элементы и его можно было бы позиционировать следом за курсором */
+    z-index: 999; /* чтобы элемент был над остальными элементами */
+    pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
+    transition: width 0.64s, height 0.64s, border-radius 0.64s, background 0.64s;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Активный класс для кружка при наведении на ссылку */
+  .follow-cursor_active {
+    height: 8px;
+    width: 8px;
+    border-width: 2px;
+    background: rgba(255, 255, 255, 0.32);
+  }
+  
+  /* Скрываем декоративный элемент при ширине браузера меньше 992px */
+  @media (max-width: 991.98px) {
+    .follow-cursor {
+      display: none;
+    }
+  }
+  @font-face {
+    font-family: "Ghastly"; /* Гарнитура шрифта */
+    src: url(fonts/GhastlyPanicCyr.otf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: "Rubik"; /* Гарнитура шрифта */
+    src: url(fonts/RubikWetPaint-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: 'Comforter';
+    src: url(fonts/ComforterBrush-Regular.otf);
+   }
+@font-face {
+  font-family: 'Vinogard';
+  src: url(fonts/TMVinograd-Regular.ttf);
+}
+.Rubik{
+  font-family: 'Rubik';
+}
+
+.Comforter{
+  font-family: 'Comforter';
+}
+.Vinogard{
+  font-family: 'Vinogard';
+}
+.mennu{
+  font-family: 'Times New Roman';
+}
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 0s 1s;
+}
+html, body {
+  overflow-x: hidden;
+  scrollbar-width: none;  /* толщина */
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+body {
+  background-image: url(Back.jpg);
+  background-position: center center;
+  /* определяет размер изображения на странице */
+  background-size: cover;
+  /* свойство устанавливает, будет ли повторяться изображение и каким образом */
+  background-repeat: no-repeat;
+  /* cвойство определяет, будет ли фоновое изображение прокручиваться 
+  вместе с остальной частью страницы или будет фиксированным */
+  background-attachment: fixed;
+}
+li {
+  list-style-type: none;
+}
+.Golden{
+  color:rgb(255, 255, 255);
+}
+
+@media (max-width:575px){
+
+}
+@media (min-width:576px) and (max-width:767px){
+  .main{
+    margin-top: 6%;
+    margin-left: 6%;
+  }
+  /* .kartinka{
+    margin-left: 40%;
+  } */
+  .regulator{
+    margin-right: 5%;
+  }
+  .official{
+    color: goldenrod;
+    font-size: 3.5rem;
+  }
+  .Official-1{
+    color: rgb(221, 221, 221);
+    font-size: 3.5rem;
+  }
+  .dadadaon{
+    margin-top: 70%;
+    margin-left: 5%;
+  }
+  .Sizee{
+    font-size: 2rem;
+    
+  }
+}
+
+@media (min-width:768px) and (max-width: 991px){
+  .main{
+    margin-top: 6%;
+    margin-left: 6%;
+  }
+  .official{
+    color: goldenrod;
+    font-size: 4.5rem;
+  }
+  .Official-1{
+    color: rgb(221, 221, 221);
+    font-size: 4.5rem;
+  }
+  .dadadaon{
+    margin-top: 55%;
+    margin-left: 5%;
+  }
+  .Sizee{
+    font-size: 1rem;
+  }
+}
+@media (min-width:992px) and (max-width: 1199px){
+  .main{
+    margin-top: 6%;
+    margin-left: 6%;
+  }
+  .official{
+    color: goldenrod;
+    font-size: 4.5rem;
+  }
+  .Official-1{
+    color: rgb(221, 221, 221);
+    font-size: 4.5rem;
+  }
+  .dadadaon{
+    margin-top: 40%;
+    margin-left: 5%;
+  }
+  .Sizee{
+    font-size: 1.3rem;
+  }
+}
+@media (min-width:1200px){
+  .main{
+    margin-top: 4%;
+    margin-left: 4.5%;
+  }
+  .dadada{
+   margin-right: 30%;
+  }
+  .official{
+    color: goldenrod;
+    font-size: 4.5rem;
+  }
+  .Official-1{
+    color: rgb(221, 221, 221);
+    font-size: 4.5rem;
+  }
+  .dadadaon{
+    margin-top: 15%;
+    margin-left: 15%;
+  }
+  .Sizee{
+    font-size: 2rem;
+  }
+}
