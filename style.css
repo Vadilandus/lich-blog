@@ -29,19 +29,19 @@
   }
   @font-face {
     font-family: "Ghastly"; /* Гарнитура шрифта */
-    src: url(fonts/GhastlyPanicCyr.otf); /* Путь к файлу со шрифтом */
+    src: url(GhastlyPanicCyr.otf); /* Путь к файлу со шрифтом */
    }
    @font-face {
     font-family: "Rubik"; /* Гарнитура шрифта */
-    src: url(fonts/RubikWetPaint-Regular.ttf); /* Путь к файлу со шрифтом */
+    src: url(RubikWetPaint-Regular.ttf); /* Путь к файлу со шрифтом */
    }
    @font-face {
     font-family: 'Comforter';
-    src: url(fonts/ComforterBrush-Regular.otf);
+    src: url(ComforterBrush-Regular.otf);
    }
 @font-face {
   font-family: 'Vinogard';
-  src: url(fonts/TMVinograd-Regular.ttf);
+  src: url(TMVinograd-Regular.ttf);
 }
 .Rubik{
   font-family: 'Rubik';
